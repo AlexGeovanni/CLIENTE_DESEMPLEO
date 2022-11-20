@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+:root{
+    --font-style: 'Nunito Sans', sans-serif;
+}
+
+body{
+    font-family: var(--font-style);
+    background-color: #1c2a44;
+}
+
+
+ul{
+    margin: 0 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 25px 0;
+    border-radius: 25px;
+    border: 0.1px solid #099fff;
+    background-color: #181818;
+    box-shadow: 0 4px 8px 0 #00ffff, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+li{
+    margin: auto;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+li:after{
+    display: block;
+    content: '';
+    border-bottom: solid 1px #00FFFF;
+    padding-bottom: 1%;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+
+li:hover:after{
+    transform: scaleX(1);
+    text-decoration: none;
+}
+
+#active{
+    border-bottom: solid 1px #00FFFF;
+    padding-bottom: 1%;
+}
+
+li a
+{
+    color: white;
+    text-decoration: none;
+}
+
+
+li a:hover
+{
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+	background-color: #0c2044;
+    color: #45f3ff;
+    position: static;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+
+#logo 
+{
+    display: inline-block;
+    margin-bottom: 0px;
+    height: 100px;
+    padding: 2px;
+}
+
+article
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+h1, h4
+{
+    color: white;
+    text-align: center;
+}
+
+h5
+{
+    color: rgb(3, 22, 41);
+    text-align: justify;
+}
+
+label
+{
+    color: white;
+    font-size: 15px;
+}
+
+section
+{
+    padding: 2%;
+    float: left;
+    width: 65%;
+ }
+.List-empleados{
+    width: 100%;
+}
+aside
+{
+    float: right;
+    width: 30%;
+}
+
+
+.titulo {
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 40px;
+    color: rgb(30, 158, 218);
+}
+
+p{
+    font-family: var(--font-style);
+    color: #00FFFF;
+    font-size: 20;
+    text-align: justify;
+}
+
+input{
+    position: relative;
+    width: 80%;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+form button{
+    width: 150px;
+
+}
+
+
+header {
+    border-bottom:2px solid #ffff ;
+    padding: 10px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header div{
+    display: flex;
+    gap: 18px;
+    padding: 5px;
+}
+header div a{
+    padding: 5px 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #ffff;
+}
+header div a:hover{
+    color: #ffff;
+    border-bottom: 2px solid #ffff;
+}
+
+table .vermas{
+    color: #ffff;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+table .vermas:hover{
+    border-bottom:2px solid #ffff ;
+}
+#listEmpleos{
+    display: flex;
+    flex-direction: column;
+}
